@@ -1,0 +1,449 @@
+<html <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Facebook Clone</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" -->
+    <!-- integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<style type="text/css">
+    /* #left_1 span{
+    display: inline-block;
+    padding: 5px;
+} */
+</style>
+
+<body>
+
+    <nav class="navbar row p-0 sticky-top" style="width: 100%;">
+        <form class="col-md-3 col-sm-12 nav-fb-logo" id="form-1" style="display: flex;justify-content: flex-start;">
+            <span><i style="font-size: 26px;padding: 0px;margin-left: 5px;color: blue;margin-top: -2px;"
+                    class="fab fa-facebook"></i></span>
+            <input style="border-radius: 30px; margin:0 2px; height:30px; width: 150px;" class="form-control"
+                type="search" placeholder="Search" aria-label="Search"></form>
+        <form class="col-md-5 col-sm-12 nav-mid-part" id="form-2"
+            style="display:flex; justify-content: center ; color: rgb(177, 175, 175); padding:0px 20px;">
+            <span><i class="fas fa-home ml-5"></i></span>
+            <span><i class="far fa-flag "></i></span>
+            <span><i class="fas fa-video "></i></span>
+            <span><i class="fas fa-laptop-house "></i></span>
+            <span><i class="fas fa-users "></i></span>
+        </form>
+        <form class="col-md-4" id="form-3"
+            style="display: flex; justify-content: flex-end; color: rgb(177, 175, 175); margin-top: 8px;">
+            <span>
+                <img style="display: inline-block;height: 30px;width: 30px;border-radius: 50%;"
+                    src="https://i.pinimg.com/236x/1e/70/db/1e70db139746d1ca582c1c09b8e3be53--army.jpg">
+                <p style="display: inline-block;">Siya</p>
+            </span>
+            <span><i class="fas fa-plus-circle" style="margin:0px var(--right-icon-space)"></i></span>
+            <span><i class="fab fa-facebook-messenger" style="margin:0px var(--right-icon-space)"></i></span>
+            <span><i class="fas fa-bell" style="margin:0px var(--right-icon-space)"></i></span>
+            <span id="arrow" style="padding: 8px;"><i class="fas fa-caret-down"></i>
+                <div id="down-arrow">
+                    <ul>
+                        <p><b>Your Pages</b></p>
+                        <li>Initiative
+                            <hr>
+                        </li>
+                        <li>Manage page
+                            <hr>
+                        </li>
+                        <li>Your groups
+                            <hr>
+                        </li>
+                        <li>Advertising on facebook
+                            <hr>
+                        </li>
+                        <li>Activity log
+                            <hr>
+                        </li>
+                        <li>News feed preferences
+                            <hr>
+                        </li>
+                        <li>Settings
+                            <hr>
+                        </li>
+                        <li>Log out</li>
+                    </ul>
+                </div>
+            </span>
+
+
+        </form>
+    </nav>
+
+    
+
+    <div class="my-container row" id="main-container">
+
+        <div id="left" class="col-md-3 position-fixed left-main">
+            <div style="margin-top: 10px;">
+                <img style="height: 25px;width: 25px;border-radius: 50%;"
+                    src="https://i.pinimg.com/236x/1e/70/db/1e70db139746d1ca582c1c09b8e3be53--army.jpg">
+                <p style="margin-top: 10px;display: inline-block;"><span>&nbsp&nbsp<b>Susmita Karmakar</b></span></p>
+            </div>
+
+            <div id="left_1">
+                <span><i class="fas fa-flag" style="color: #f12711be;"></i>&nbsp&nbsp Pages</span><br>
+                <span><i class="fas fa-user-nurse" style="color: #26e320;"></i>&nbsp&nbsp Covid-19
+                    info...</span><br>
+                <span><i class="fas fa-user-friends" style="color:#06beb6"></i>&nbsp&nbsp Friends</span><br>
+                <span><i class="fas fa-users" style="color: #0052D4;"></i>&nbsp&nbsp Groups</span><br>
+                <span><i class="fas fa-chevron-circle-down" style="color: rgba(109, 100, 100, 0.822);"></i>&nbsp&nbsp
+                    See more</span>
+                <hr>
+
+                <p><b>Your Shortcuts</b></p>
+                <span><i class="fab fa-slack" style="color: #0f9b0f"></i>&nbsp&nbsp CampusX </span><br>
+                <span><i class="fas fa-flag" style="color: #FDC830"></i>&nbsp&nbsp OneWbut</span><br>
+                <span><i class="fab fa-pied-piper" style="color:#FF0099"></i>&nbsp&nbsp Tweakster</span><br>
+                <span><i class="fab fa-pied-piper-square" style="color: #0052D4;"></i>&nbsp&nbsp Calcutta
+                    startups</span><br>
+                <span><i class="fas fa-heartbeat" style="color:#FF0000"></i>&nbsp&nbsp Logic Villa</span><br>
+                <span><i class="fas fa-chevron-circle-down" style="color: rgba(109, 100, 100, 0.822);"></i>&nbsp&nbsp
+                    See more</span>
+                <hr>
+
+                <p><b>Explore</b></p>
+                <span><i class="fas fa-gamepad" style="color: #FF8C00"></i>&nbsp&nbsp Games</span><br>
+                <span><i class="fas fa-film" style="color: #3e30fd"></i>&nbsp&nbsp Movies</span><br>
+                <span><i class="fas fa-ad" style="color: rgb(36, 35, 35)"></i>&nbsp&nbsp Recent ad activities</span><br>
+                <span><i class="fas fa-photo-video" style="color: #b31884;"></i>&nbsp&nbsp Live Videos</span><br>
+                <span><i class="fas fa-cloud-sun-rain" style="color:#00c3ff"></i>&nbsp&nbsp Weather</span><br>
+                <span><i class="fas fa-coffee" style="color: rgba(255, 1, 1, 0.486);"></i>&nbsp&nbsp Offers</span><br>
+                <span><i class="fas fa-podcast" style="color: #59fd30"></i>&nbsp&nbsp Crisis response</span><br>
+                <span><i class="fas fa-th-large" style="color:#1414a8"></i>&nbsp&nbsp Gaming videos</span><br>
+                <span><i class="fas fa-camera-retro" style="color: #73767a;"></i>&nbsp&nbsp Memories</span><br>
+                <span><i class="fas fa-briefcase" style="color:#b1492c"></i>&nbsp&nbsp Jobs</span><br>
+                <hr>
+            </div><br><br>
+
+        </div>
+
+
+
+
+        <div class="col-md-1" id="left-gap"></div>
+
+
+
+
+        <div class="col-md-5 col-sm-12 mid-main" id="middle">
+
+            <div class="mid row" id="mid-1">
+                <div class="col-md-12 mid-1-sub" id="mid-1-sub-1">
+                    <p style="margin-bottom: 0px;"><strong>Create post</strong></p>
+                </div>
+                <div class="col-md-12 mid-1-sub" id="mid-1-sub-2">
+                    <img src="https://i.pinimg.com/236x/1e/70/db/1e70db139746d1ca582c1c09b8e3be53--army.jpg">
+                    <p>
+                        <span>
+                            Write something here ...
+                        </span>
+                    </p>
+                </div>
+                <div class="col-md-12 col-sm-12 mid-1-sub row" id="mid-1-sub-3">
+                    <div class="col-md-4 col-sm-4 mid-1-sub-31"><span><i class="fas fa-video"
+                                style="color: #ec38bc;"></i>&nbsp&nbsp Create room</span></div>
+                    <div class="col-md-4 col-sm-4 mid-1-sub-31"><span><i class="fas fa-image" style="color: #12c2e9;"></i>&nbsp
+                            Photo/Video</span></div>
+                    <div class="col-md-4 col-sm-4 mid-1-sub-31"><span><i class="fas fa-user-tag"
+                                style="color: #4A00E0;"></i>&nbsp&nbsp Tag friends</span></div>
+                </div>
+
+            </div>
+
+            <div class="mid" id="mid-2">
+
+                <div class="mid-2-sub" id="mid-2-sub-1" style="font-size: 14px;">
+                    <span>
+                        <p style="display: inline-block;">Stories</p><a href="#" style="float: right;">See all</a>
+                    </span>
+                </div>
+
+                <div class="mid-2-sub" id="mid-2-sub-2">
+
+                    <div class="card">
+                        <img
+                            src="https://www.goodmorningimagesdownload.com/wp-content/uploads/2019/10/Stylish-Girls-Whatsapp-DP-Profile-Images-32-300x300.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="https://i.pinimg.com/originals/8a/e3/e6/8ae3e607637fe2e3aab0a5bba8e64331.jpg">
+                    </div>
+                    <div class="card">
+                        <img
+                            src="https://i0.wp.com/www.hindishayaricollections.com/wp-content/uploads/2019/09/beautiful-girls-images-wallpapers-45.jpeg?resize=599%2C700&ssl=1">
+                    </div>
+                    <div class="card">
+                        <img
+                            src="https://cdn.statically.io/img/indiapur.com/wp-content/uploads/2019/06/whatsapp-dp-5.jpg?f=auto">
+                    </div>
+                    <div class="card">
+                        <img
+                            src="https://123wpstatus.com/wp-content/uploads/2020/02/alone-whatsapp-dp-boy-hd.jpg?189db0&189db0">
+                    </div>
+                    <!-- <div class="card">
+                        <img
+                            src="https://www.imagediamond.com/blog/wp-content/uploads/2019/07/Girls-whatsapp-Dp-112.jpg">
+                    </div> -->
+
+                </div>
+            </div>
+
+            <div class="mid" id="mid-3">
+                <div class="mid-3-sub" id="mid-3-sub-1">
+                    <div style="padding:10px 10px;">
+                        <img style="height: 50px;width: 50px;border-radius: 50%;"
+                            src="https://www.imagediamond.com/blog/wp-content/uploads/2019/07/Girls-whatsapp-Dp-112.jpg">
+                        <p style="margin-top: 10px;display: inline-block;font-size: 17px;">
+                            <span style="color: rgb(0, 0, 207);">&nbsp&nbsp Jasmin Paul <i class="fas fa-check-circle"
+                                    style="color: rgba(18, 127, 252, 0.986);"></i></span>
+                        </p>
+                        <div style="margin:-15px 68px;font-size: 13px;">
+                            <span>2 h. <i class="fas fa-globe-asia"></i></span>
+                        </div>
+                        </p>
+                    </div>
+                    <div style="padding:2px 10px;">
+                        <p>
+                            Keep your face to the sun and you will never see the shadow 😁 <i
+                                style="color: rgba(26, 26, 252, 0.884);" class="fas fa-heart"></i>
+                        </p>
+                    </div>
+                    <div>
+                        <img style="height:auto;width: 100%;"
+                            src="https://data.whicdn.com/images/197345993/original.jpg">
+                    </div>
+                    <div style="padding:10px 15px;font-size: 20px;">
+                        <i style="color: blue;" class="far fa-thumbs-up"></i><i style="color: red;"
+                            class="fas fa-heart"></i>
+                        <span style="font-size: 14px;"> 2.5K</span>
+                        <span style="float: right;font-size: 14px;">85 comments . 11 Shares</span>
+                        <hr style="margin: 2px;">
+                    </div>
+                    <div class="row " style="padding: 5px 30px;color:rgba(37, 36, 36, 0.623)">
+                        <div class="col-md-4 col-sm-4"><i class="far fa-thumbs-up"></i> Like </div>
+                        <div class="col-md-4 col-sm-4"><i class="far fa-comment-alt"></i> Comment</div>
+                        <div class="col-md-4 col-sm-4"><i class="fas fa-share"></i> Share</div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="mid" id="mid-4">
+                <div class="mid-4-sub" id="mid-4-sub-1">
+                    <div style="padding:10px 10px;">
+                        <img style="height: 50px;width: 50px;border-radius: 50%;"
+                            src="https://scontent.frdp1-1.fna.fbcdn.net/v/t1.0-1/p160x160/37720577_10156648811257171_3223166539519754240_n.jpg?_nc_cat=1&_nc_sid=dbb9e7&_nc_ohc=wJ4JtPc-yZsAX_iX2Wx&_nc_ht=scontent.frdp1-1.fna&tp=6&oh=06ab6c47cf5f50abb0aaff2cf61c9d79&oe=5F70C671">
+                        <p style="margin-top: 10px;display: inline-block;font-size: 17px;">
+                            <span style="color: rgb(0, 0, 207);">&nbsp&nbsp Google Adds <i class="fas fa-check-circle"
+                                    style="color: rgba(18, 127, 252, 0.986);"></i></span>
+                        </p>
+                        <div style="margin:-15px 68px;font-size: 13px;">
+                            <span>2 d. <i class="fas fa-globe-asia"></i></span>
+                        </div>
+                        </p>
+                    </div>
+                    <div style="padding:2px 10px;">
+                        <p>
+                            Many Businesses Use Google Ads To Grow Online.
+                        </p>
+                    </div>
+                    <div>
+                        <img style="height:auto;width: 100%;"
+                            src="https://scontent.fccu2-1.fna.fbcdn.net/v/t45.1600-4/cp0/q90/spS444/s526x296/91152957_23844477509730316_8079056323859185664_n.png.jpg?_nc_cat=100&_nc_sid=67cdda&_nc_ohc=L25lgtdfMG4AX83I8tQ&_nc_oc=AQnhIQ-xWraqlTl9WB0AvRfniwRKEPxO-TImOsGb32elL2fVy7DPj2MSCrx25-zTb9qobfYER9A9dkn5pGtb82bt&_nc_ht=scontent.fccu2-1.fna&oh=b451250c85378dfa49931990dd419525&oe=5F6F7309">
+                    </div>
+                    <div style="padding:10px 15px;font-size: 20px;">
+                        <i style="color: blue;" class="far fa-thumbs-up"></i><i style="color: red;"
+                            class="fas fa-heart"></i>
+                        <span style="font-size: 14px;"> 2.5K</span>
+                        <span style="float: right;font-size: 14px;">25 comments . 2 Shares</span>
+                        <hr style="margin: 2px;">
+                    </div>
+                    <div class="row" style="padding: 5px 30px;color:rgba(37, 36, 36, 0.623)">
+                        <div class="col-md-4 col-sm-4"><i class="far fa-thumbs-up"></i> Like </div>
+                        <div class="col-md-4 col-sm-4"><i class="far fa-comment-alt"></i> Comment</div>
+                        <div class="col-md-4 col-sm-4"><i class="fas fa-share"></i> Share</div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="mid" id="mid-5">
+                <div class="mid-5-sub" id="mid-5-sub-1">
+                    <div style="padding:10px 10px;">
+                        <img style="height: 50px;width: 50px;border-radius: 50%;"
+                            src="https://yt3.ggpht.com/a/AATXAJzAQXv40Mt_rvggnbqZRvKpoHr3r-DYUck2Io6KXQ=s100-c-k-c0xffffffff-no-rj-mo">
+                        <p style="margin-top: 10px;display: inline-block;font-size: 17px;">
+                            <span style="color: rgb(0, 0, 207);">&nbsp&nbsp Arijit Singh<i class="fas fa-check-circle"
+                                    style="color: rgba(18, 127, 252, 0.986);"></i></span>
+                        </p>
+                        <div style="margin:-15px 68px;font-size: 13px;">
+                            <span>5 h. <i class="fas fa-globe-asia"></i></span>
+                        </div>
+                        </p>
+                    </div>
+                    <div style="padding:2px 10px;">
+                        <p>
+                            Bengali Songs ❤︎ <i style="color: rgba(252, 26, 26, 0.884);" class="fas fa-heart"></i>
+                        </p>
+                    </div>
+                    <div>
+                        <iframe width="100%" height="450" src="https://www.youtube.com/embed/5rdPN6V4aZ8"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div style="padding:10px 15px;font-size: 20px;">
+                        <i style="color: blue;" class="far fa-thumbs-up"></i><i style="color: red;"
+                            class="fas fa-heart"></i>
+                        <span style="font-size: 14px;"> 2.5K</span>
+                        <span style="float: right;font-size: 14px;">805 comments . 109 Shares</span>
+                        <hr style="margin: 2px;">
+                    </div>
+                    <div class="row" style="padding: 5px 30px;color:rgba(37, 36, 36, 0.623)">
+                        <div class="col-md-4 col-sm-4"><i class="far fa-thumbs-up"></i> Like </div>
+                        <div class="col-md-4 col-sm-4"><i class="far fa-comment-alt"></i> Comment</div>
+                        <div class="col-md-4 col-sm-4"><i class="fas fa-share"></i> Share</div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="col-md-2" id="right-gap"></div>
+
+
+
+
+        <div class="col-md-2 right position-fixed" id="right-div">
+
+            <div id="right-1" class="right-sub">
+                <p style="margin-top: 10px;display: inline-block;margin-bottom: 0px;font-size: 14px;">
+                    <span>&nbsp&nbsp<b>Sponsored</b></span></p>
+            </div>
+            <hr>
+
+            <div id="right-2" class="right-sub">
+                <p style="display: inline-block;margin-bottom: 0px;font-size: 14px;"><span>&nbsp&nbsp<b>Your
+                            pages</b></span></p>
+                <div id="right-2-sub-1" style="padding: 10px;">
+                    <span style="font-size: 14px;"><i class="fab fa-osi"
+                            style="font-weight: 800;color: blue;font-size: 20px;"></i>&nbsp&nbsp Initiative</span>
+                    <div id="right-2-sub-1" style="margin: 20px;">
+                        <span style="font-size: 14px;">
+                            <p><i class="far fa-comments"></i>&nbsp&nbsp 10 Messages</p>
+                        </span>
+                        <span style="font-size: 14px;">
+                            <p><i class="far fa-bell"></i>&nbsp&nbsp 17 Notifications</p>
+                        </span>
+                        <span style="font-size: 14px;">
+                            <p><i class="fas fa-volume-up"></i>&nbsp&nbsp Create promotions</p>
+                        </span>
+                    </div>
+                    <hr>
+                </div>
+                <div id="right-2-sub-2">
+                    <p style="display: inline-block;margin: 0px;font-size: 14px;"><span>&nbsp&nbsp<b>Friend
+                                Requests</b></span></p>
+                    <a href="#" style="float: right;font-size: 14px;">See all</a>
+                    <div id="right-2-sub-2" style="margin:10px 0px;">
+                        <img style="height: 40px;width: 40px;border-radius: 50%;"
+                            src="https://lh3.googleusercontent.com/ogw/ADGmqu-E-Cd74b50fqhlRyqWOUCGFE-GkAzDgjDpPFaE=s32-c-mo">
+                        <p style="margin-top: 10px;display: inline-block;font-size: 15px;">
+                            <span>&nbsp&nbsp Susmita Karmakar</span>
+                        </p>
+                        <div style="margin:-15px 53px;font-size: 11px;">
+                            <span>25 Mutual Friends</span>
+                        </div>
+                        <div style="margin: 30px 50px;font-size: 11px;display: flex;">
+                            <button
+                                style="padding: 3px 6px;border: none;background-color: blue;color: white;border-radius: 5px;margin: 0px 5px;">Confirm</button>
+                            <button
+                                style="padding: 3px 6px;border: none;background-color: rgb(146, 146, 151);color: rgb(255, 255, 255);border-radius: 5px;">Delete</button>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div id="right-2-sub-3">
+                    <div>
+                        <p style="display: inline-block;margin: 0px;font-size: 14px;">
+                            <span>&nbsp&nbsp<b>Birthdays</b></span></p><br>
+                    </div>
+                    <div style="display: flex;margin: 10px 0px;">
+                        <div style="display: inline-block; font-size: 25px;margin:5px 0px;"><i style="color: blue;"
+                                class="fas fa-gift"></i></div>
+                        <div style="display: inline-block; font-size: 12px;margin:0px 10px;padding: 0px;">
+                            <span"><b>Akash Roy</b> and <b>2 others</b><br> have their birthdays today</span>
+                        </div>
+                    </div>
+
+                </div>
+                <hr>
+                <div id="right-2-sub-3">
+                    <div>
+                        <p style="display: inline-block;margin: 0px;font-size: 14px;">
+                            <span>&nbsp&nbsp<b>Contacts</b></span></p><br><br>
+                    </div>
+                    <img style="height: 40px;width: 40px;border-radius: 50%;"
+                        src="https://itechway.net/wp-content/uploads/2017/11/fantastic-boys-profile-pic.jpg">
+                    <p style="margin-top: 10px;display: inline-block;">
+                        <span>&nbsp&nbsp Sachin Verma</span>
+                    </p><br>
+                    <img style="height: 40px;width: 40px;border-radius: 50%;"
+                        src="https://www.mwallpapers.com/photos/celebrities/ishaani-krishna/ishaani-krishnahd-wallpapers-desktop-background-android-iphone-1080p-4k-iij7n.jpg?v=1596208274">
+                    <p style="margin-top: 10px;display: inline-block;">
+                        <span>&nbsp&nbsp Sanjana Sen</span>
+                    </p><br>
+                    <img style="height: 40px;width: 40px;border-radius: 50%;"
+                        src="https://i.pinimg.com/originals/13/ce/e7/13cee7a422eb7ea93d98cb6e62f33bc3.jpg">
+                    <p style="margin-top: 10px;display: inline-block;">
+                        <span>&nbsp&nbsp Parth Chaudhury</span>
+                    </p><br>
+                    <img style="height: 40px;width: 40px;border-radius: 50%;"
+                        src="https://www.best4geeks.com/wp-content/uploads/2018/08/48-lovely-cute-girl-picture.jpg">
+                    <p style="margin-top: 10px;display: inline-block;">
+                        <span>&nbsp&nbsp Sneha Mukherjee</span>
+                    </p><br>
+                    <img style="height: 40px;width: 40px;border-radius: 50%;"
+                        src="https://www.imagediamond.com/blog/wp-content/uploads/2019/07/Girls-whatsapp-Dp-112.jpg">
+                    <p style="margin-top: 10px;display: inline-block;">
+                        <span>&nbsp&nbsp Jasmin Paul</span>
+                    </p><br>
+                </div><br><br><br>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    </div>
+
+    <script src="" async defer></script>
+</body>
+
+</html>

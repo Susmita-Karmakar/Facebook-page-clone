@@ -1,0 +1,273 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div{
+    cursor: pointer;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #ecebeb94;
+}
+
+.navbar{
+    height: auto;
+    width: 100%;
+    margin: 0px;
+    box-shadow: 0px 0px 5px 2px rgba(126, 118, 118, 0.603);
+    background-color:#ffffff;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.nav-mid-part span{
+    /* margin-left: 100px; */
+    margin: 0px 20px;
+}
+
+.navbar i{
+    font-size: 22px;
+    color: rgb(78, 73, 73);
+}
+
+.navbar span:hover i{
+    color: blue;
+}
+
+.navbar span{
+    padding: 5px 5px;
+    border-radius: 30px;
+}
+
+.navbar span:hover{    
+    background-color: rgba(232, 232, 241, 0.699);
+}
+
+#down-arrow{
+    display: none;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 10px 2px grey;
+    font-size: 14px;
+}
+
+#down-arrow ul{
+    padding: 15px;
+}
+
+#down-arrow hr{
+    margin: 0px 0px;
+}
+
+#down-arrow li{
+    display: block;
+    margin:0px 0px;
+    padding:5 15px;
+    color: rgb(92, 88, 88);
+}
+
+#down-arrow li:hover{
+    color: white;
+    background-color: blue;
+}
+
+#arrow:hover #down-arrow{
+    list-style-type: none;
+    border-radius: 10px;
+	display: block;
+	position: absolute;
+	margin-top: 20px;
+	margin-left: -180px;
+	max-width: 100%;
+	padding: 0px;
+}
+
+#main-container{
+    width: 95%;
+    margin: auto;
+}
+
+#left{
+    font-size: 14px;
+    height: 700px;
+    overflow-y: scroll;
+}
+
+#left_1 span{
+    display: inline-block;
+    padding: 3px;
+}
+
+#left_1 span:hover{
+    background-color: darkgrey;
+}
+
+#left i{
+    font-size: 20px;
+}
+
+#middle{
+    margin-bottom: 20px;
+    margin-left: 300px;
+}
+
+.mid{
+    margin-top: 15px;
+    box-shadow: 0px 1px 2px rgba(128, 128, 128, 0.767);
+}
+
+.mid i:hover{
+    color:rgba(29, 26, 26, 0.89);
+}
+
+#mid-1{
+    background-color: rgb(253, 253, 253);
+}
+
+.mid-1-sub{
+    padding: 10px;
+    margin: 0px;
+}
+
+#mid-1-sub-1{
+    background-color: rgba(181, 195, 219, 0.26);
+    color: rgb(22, 22, 22);
+    font-size: 12px;
+    border: 1px rgba(211, 210, 210, 0.452) solid;
+    margin: 0px;
+    margin-bottom: 0px;
+}
+
+#mid-1-sub-2{
+    border-bottom: 1px rgba(211, 210, 210, 0.452) solid ;
+}
+
+#mid-1-sub-2 img{
+    height: 40px;width: 40px;
+    border-radius: 50%;
+    margin: 5px 10px;
+}
+
+#mid-1-sub-2 p{
+    margin-top: 10px;
+    display: inline-block;
+    color: rgb(156, 156, 156);
+    font-size: 14px;
+}
+
+.mid-1-sub-31{
+    padding: 5px;
+}
+
+#mid-1-sub-3 span{
+    font-size: 12px;
+    padding: 10px;
+    background-color: rgba(181, 195, 219, 0.26);
+    border-radius: 20px;
+}
+
+#mid-2{
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.mid-2-sub{
+    height: auto;
+    padding: 10px;
+}
+
+#mid-2-sub-2{
+    display: flex;
+    padding: 0px;
+    align-content: space-between;
+}
+
+#mid-2-sub-2 .card{
+    width: 24%;
+    height: 180px;
+    border-radius: 10px;
+    margin: 3px;
+}
+
+#mid-2-sub-2 .card img{
+    height: 100%;
+    border-radius: 10px;
+}
+
+#mid-2-sub-2 .card img:hover{
+    opacity: 0.9;
+}
+
+#right-div{
+    margin-left: 1250px;
+    height: 700px;
+    overflow-y: scroll;
+}
+
+#right-div hr{
+    margin: 5px;
+}
+
+#right-2-sub-2 button:hover{
+    opacity: 0.8;
+}
+
+/* --------------------For Tablets------------------- */
+
+@media (min-width:768px) and (max-width:1024px){
+
+    
+    .nav-mid-part span{
+        margin: 0px 12px;
+    }
+
+    .right{
+        display: none;
+    }
+
+    #left-main{
+        width: 400px;
+    }
+
+    .mid{
+        margin-left: -130px;
+        width: 450px;
+    }
+    
+}
+
+
+/* ************************ For Smartphones *************************** */
+
+@media (max-width:767px){
+    .navbar{
+        width: 100%;
+    }
+
+    .nav-mid-part span{
+        margin: 0px 10px;
+    }
+
+    .nav-fb-logo{
+        margin: 5px 0px;
+    }
+
+    form{
+        box-shadow: 0px 1px 2px rgba(128, 128, 128, 0.767);
+    }
+
+    .left-main , #mid-1-sub-3{
+        display: none;
+    }
+
+    #middle{
+        margin-left: 0px;
+    }
+
+    #mid-2-sub-2 .card{
+        height: 120px;
+    }
+}
+
+

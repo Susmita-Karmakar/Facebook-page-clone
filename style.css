@@ -91,7 +91,6 @@ body{
 #left{
     font-size: 14px;
     height: 700px;
-    overflow-y: scroll;
 }
 
 #left_1 span{
@@ -250,8 +249,10 @@ body{
     }
 
     .nav-fb-logo{
-        margin: 5px 0px;
+        padding: 3px 0px;
     }
+
+    
 
     form{
         box-shadow: 0px 1px 2px rgba(128, 128, 128, 0.767);
@@ -268,10 +269,11 @@ body{
     #mid-2-sub-2 .card{
         height: 120px;
     }
-	
+
     .right{
         display: none;
     }
 }
+
 
 

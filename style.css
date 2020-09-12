@@ -242,6 +242,7 @@ body{
 @media (max-width:767px){
     .navbar{
         width: 100%;
+        height: 88px;
     }
 
     .nav-mid-part span{
@@ -252,14 +253,20 @@ body{
         padding: 3px 0px;
     }
 
-    
-
     form{
         box-shadow: 0px 1px 2px rgba(128, 128, 128, 0.767);
     }
 
-    .left-main , #mid-1-sub-3{
+    #form-3{
+        visibility: hidden;
+    }
+
+    .left-main {
         display: none;
+    }
+
+    #mid-1-sub-3{
+        font-size: 2vw;
     }
 
     #middle{
@@ -270,10 +277,17 @@ body{
         height: 120px;
     }
 
+    .user-exp{
+        font-size: 4vw;
+    }
+
+    .user-exp span{
+        padding: 0px 5px;
+    }
+
     .right{
         display: none;
     }
 }
-
 
 
